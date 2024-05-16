@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="fetch.js"></script>
+<style>
+    .main{
+        width: 500px;
+        height: 300px;
+        border: 2px solid black;
+        background-color: beige;
+        transform: 0.3s ease-in;
+    }
+    table,th,tr,td{
+        border: 1px solid black;
+        padding: 2px;
+    }
+</style>
+</head>
+<body>
+    <center>
+        <h1>Fetch API Demonstration</h1>
+        <div class="main">
+            <center>
+            <br>
+            <br>
+            <label>ID   : </label><input type="text" id="id"><br>
+            <br>
+            <label>Name : </label><input type="text" id="name"><br>
+            <br>
+            <label>Dept : </label><input type="text" id="dept"><br>
+            <br>
+            <button id="insert" onclick="insert()"> Insert </button>
+            <button id="get" onclick="getData()"> Get </button>
+            <button id="delete" onclick="Delete()"> Delete </button>
+            </center>
+        </div>
+        <br>
+        <br>
+        <div id="result">
+        </div>
+    </center>
+</body>
+</html>
